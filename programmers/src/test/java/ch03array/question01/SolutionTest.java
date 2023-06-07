@@ -3,6 +3,8 @@ package ch03array.question01;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Random;
+
 
 class SolutionTest {
 

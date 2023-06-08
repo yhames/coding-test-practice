@@ -29,7 +29,7 @@ public class Solution {
         }
 
         for (Point point : points) {
-            int movedX = maxPoint.x - point.x;
+            int movedX = point.x - minPoint.x;
             int movedY = maxPoint.y - point.y;
             arr[movedY][movedX] = '*';
         }

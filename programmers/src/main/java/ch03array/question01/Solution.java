@@ -20,8 +20,8 @@ public class Solution {
         Point maxPoint = getMaxPoint(points);
         Point minPoint = getMinPoint(points);
 
-        int width = maxPoint.x - minPoint.x + 1;
-        int height = maxPoint.y - minPoint.y + 1;
+        int width = (int) (maxPoint.x - minPoint.x + 1);
+        int height = (int) (maxPoint.y - minPoint.y + 1);
 
         char[][] arr = new char[height][width];
         for (char[] chars : arr) {
@@ -29,8 +29,8 @@ public class Solution {
         }
 
         for (Point point : points) {
-            int movedX = point.x - minPoint.x;
-            int movedY = maxPoint.y - point.y;
+            int movedX = (int) (point.x - minPoint.x);
+            int movedY = (int) (maxPoint.y - point.y);
             arr[movedY][movedX] = '*';
         }
 
@@ -43,16 +43,16 @@ public class Solution {
     }
 
     private Point getMaxPoint(List<Point> points) {
-        int identity = Integer.MIN_VALUE;
-        int maximumX = points.stream().mapToInt(p -> p.x).reduce(identity, Math::max);
-        int maximumY = points.stream().mapToInt(p -> p.y).reduce(identity, Math::max);
+        long identity = Long.MIN_VALUE;
+        long maximumX = points.stream().mapToLong(p -> p.x).reduce(identity, Math::max);
+        long maximumY = points.stream().mapToLong(p -> p.y).reduce(identity, Math::max);
         return new Point(maximumX, maximumY);
     }
 
     private Point getMinPoint(List<Point> points) {
-        int identity = Integer.MAX_VALUE;
-        int minimumX = points.stream().mapToInt(p -> p.x).reduce(identity, Math::min);
-        int minimumY = points.stream().mapToInt(p -> p.y).reduce(identity, Math::min);
+        long identity = Long.MAX_VALUE;
+        long minimumX = points.stream().mapToLong(p -> p.x).reduce(identity, Math::min);
+        long minimumY = points.stream().mapToLong(p -> p.y).reduce(identity, Math::min);
         return new Point(minimumX, minimumY);
     }
 
@@ -65,7 +65,7 @@ public class Solution {
         double y = (double) (e * c - a * f) / (a * d - b * c);
 
         if (isInteger(x, y)) {
-            return new Point((int) x, (int) y);
+            return new Point((long) x, (long) y);
         }
 
         return null;
@@ -77,11 +77,11 @@ public class Solution {
 
     private class Point {
 
-        public final int x;
+        public final long x;
 
-        public final int y;
+        public final long y;
 
-        public Point(int x, int y) {
+        public Point(long x, long y) {
             this.x = x;
             this.y = y;
         }

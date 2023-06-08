@@ -56,7 +56,7 @@ public class Solution {
         return new Point(minimumX, minimumY);
     }
 
-    private Point getIntersectionPoints(int a, int b, int e, int c, int d, int f) {
+    private Point getIntersectionPoints(long a, long b, long e, long c, long d, long f) {
         if ((a * d - b * c) == 0) {
             return null;
         }

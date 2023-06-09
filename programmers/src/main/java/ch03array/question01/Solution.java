@@ -9,7 +9,7 @@ public class Solution {
         List<Point> points = new ArrayList<>();
         for (int i = 0; i < line.length; i++) {
             for (int j = i + 1; j < line.length; j++) {
-                Point point = getIntersectionPoints(line[i][0], line[i][1], line[i][2],
+                Point point = getIntersectionPoint(line[i][0], line[i][1], line[i][2],
                         line[j][0], line[j][1], line[j][2]);
                 if (point != null) {
                     points.add(point);
@@ -56,7 +56,7 @@ public class Solution {
         return new Point(minimumX, minimumY);
     }
 
-    private Point getIntersectionPoints(long a, long b, long e, long c, long d, long f) {
+    private Point getIntersectionPoint(long a, long b, long e, long c, long d, long f) {
         if ((a * d - b * c) == 0) {
             return null;
         }

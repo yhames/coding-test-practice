@@ -13,7 +13,7 @@
         + [`Collectors.mapping`](#`Collectors.groupingBy`)
         + [`Collectors.counting`](#`Collectors.groupingBy`)
         + [리펙토링 코드](#리펙토링 코드)
-- [참고자료](#[참고자료])
+- [참고자료](#참고자료)
 
 ## 문제분석
 
@@ -153,7 +153,9 @@ Arrays.stream(clothes)  // Stream<String[]>
         .reduce(1L,(acc,x)->acc*x).intValue();    // int
 ```
 
-## [참고자료]  
+<hr>
+
+## 참고자료
 > [경우의 수, 합의 법칙, 곱의 법칙](https://mathbang.net/109#gsc.tab=0)  
 > [[Java] Stream 데이터 groupingBy 예제](https://umanking.github.io/2021/07/31/java-stream-grouping-by-example/)  
 > [Java stream groupingBy 정리](https://blog.naver.com/PostView.naver?blogId=semtul79&logNo=222209752515&categoryNo=13&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search)  

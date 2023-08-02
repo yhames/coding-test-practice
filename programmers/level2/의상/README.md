@@ -12,7 +12,7 @@
         + [`Collectors.groupingBy`](#`Collectors.groupingBy`)
         + [`Collectors.mapping`](#`Collectors.groupingBy`)
         + [`Collectors.counting`](#`Collectors.groupingBy`)
-        + [리펙토링 코드](#리펙토링 코드)
+        + [리펙토링 코드](#리펙토링-코드)
 - [참고자료](#참고자료)
 
 ## 문제분석

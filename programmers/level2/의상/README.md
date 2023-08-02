@@ -6,7 +6,7 @@
 
 * 코니가 가진 의상들이 담긴 2차원 배열 clothes가 주어질 때 서로 다른 옷의 조합의 수를 return
 
-**⭐️ 키워드 : 서로다른 옷의 조합**
+**⭐️ 키워드 : 서로다른 옷의 조합의 수**
 
 ### 조건
 
@@ -43,21 +43,21 @@
 ## 의사코드
 
 ```java
-Map<종류, 가짓수> map=new HashMap<>();
-for(cloth:clothes){
+Map<종류, 가짓수> map = new HashMap<>();
+for(cloth : clothes){
     if(종류가 이미 있으면){
-        map에 해당 종류의 가짓수+1
-    }else{ // 종류가 없으면
+        map에 해당 종류의 가짓수 + 1
+    }else{    // 종류가 없으면
         map에 해당 종류 추가
     }
 }
 
-int answer=1; // 곱셈연산 초기값은 1
-for(key:map.keySet()){
-    answer*=map.get(key)+1
+int answer = 1;    // 곱셈연산 초기값은 1
+for(key : map.keySet()){
+    answer *= map.get(key) + 1
 }
 
-return--answer;
+return --answer;    // 모두 선택하지 않는 경우의 수 제외
 ```
 
 ## 코드분석
@@ -99,6 +99,8 @@ public final class Collectors {
 | downstream |    `Collector<? super T, A, D>`    |    분류 방식    |
 | mapFactory |           `Supplier<M>`            |  Map 구성 방식  |
 
+#### `Collectors.mapping`
+
 ```java
 public final class Collectors {
     // ...
@@ -110,6 +112,8 @@ public final class Collectors {
     }
 // ...
 ```
+
+#### `Collectors.counting`
 
 ```java
 public final class Collectors {

@@ -1,5 +1,20 @@
 # [프로그래머스 코딩테스트 연습 level2 - 의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578?language=java)
 
+- [문제분석](##문제분석)
+    * [요구사항](###요구사항)
+    * [조건](###조건)
+    * [제한사항](###제한사항)
+- [접근방법](##접근방법)
+- [의사코드](##의사코드)
+- [코드분석](##코드분석)
+    * [시간복잡도](###시간복잡도)
+    * [리펙토링](###리펙토링)
+        + [`Collectors.groupingBy`](#-collectorsgroupingby-)
+        + [`Collectors.mapping`](#-collectorsmapping-)
+        + [`Collectors.counting`](#-collectorscounting-)
+        + [코드](####코드)
+- [참고자료](##참고자료)
+
 ## 문제분석
 
 ### 요구사항
@@ -126,7 +141,7 @@ public final class Collectors {
 // ...
 ```
 
-#### 코드
+#### 리펙토링 코드
 
 ```java
 Arrays.stream(clothes)  // Stream<String[]>
@@ -138,7 +153,7 @@ Arrays.stream(clothes)  // Stream<String[]>
         .reduce(1L,(acc,x)->acc*x).intValue();    // int
 ```
 
-> **[참고자료]**  
+## [참고자료]  
 > [경우의 수, 합의 법칙, 곱의 법칙](https://mathbang.net/109#gsc.tab=0)  
 > [[Java] Stream 데이터 groupingBy 예제](https://umanking.github.io/2021/07/31/java-stream-grouping-by-example/)  
 > [Java stream groupingBy 정리](https://blog.naver.com/PostView.naver?blogId=semtul79&logNo=222209752515&categoryNo=13&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search)  

@@ -119,7 +119,7 @@ class Solution {
 
 > Integer.toString(int n, int radix)
 
-n진수 게임 문제를 풀이하다가
+[n진수 게임](../n진수_게임/README.md#리펙토링) 문제를 풀이하다가
 `Integer.toString()`에 `radix`에 따른 숫자를 `String`으로 변환해준다는 것을 알게되었다.
 이것을 활용하면 코드를 훨씬 줄일 수 있겠다.
 

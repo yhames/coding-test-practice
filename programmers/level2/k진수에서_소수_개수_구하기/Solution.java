@@ -2,15 +2,7 @@ import java.util.Arrays;
 
 class Solution {
     public int solution(int n, int k) {
-        StringBuilder sb = new StringBuilder();
-        while (n > 0) {
-            sb.append(n % k);
-            n = n / k;
-        }
-
-        String n_k = sb.reverse().toString();
-        System.out.println("n_k = " + n_k);
-        return (int) Arrays.stream(n_k.split("0"))
+        return (int) Arrays.stream(Integer.toString(n, k).split("0"))
                 .filter(s -> !s.isEmpty())
                 .mapToLong(Long::parseLong)
                 .filter(this::isPrime)

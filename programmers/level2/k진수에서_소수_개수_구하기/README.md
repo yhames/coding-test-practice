@@ -9,7 +9,8 @@
 - [코드분석](#코드분석)
     * [시간복잡도](#시간복잡도)
     * [리펙토링](#리펙토링)
-        + [리펙토링 코드](#리펙토링-코드)
+        + [제한조건에 따른 자료형 범위 예측](#제한조건에-따른-자료형-범위-예측)
+        + [Integer.toString() with radix](#Integer.toString()-with-radix)
 - [참고자료](#참고자료)
 
 ## 문제분석
@@ -90,11 +91,11 @@ class Solution {
 
 ### 리펙토링
 
+#### 제한조건에 따른 자료형 범위 예측
+
 `n`의 최댓값이 `1000000`이므로 이를 `2`진수로 변환했을 때 `11110100001001000000`이 된다.
 따라서 소수 판별을 위해 `"0"`으로 분리했을 때 최댓값이 `int` 범위를 벗어난다.  
 따라서 `Integer`가 아닌 `Long`을 사용해야한다.
-
-#### 리펙토링 코드
 
 ```java
 class Solution {
@@ -111,6 +112,27 @@ class Solution {
     private boolean isPrime(long number) {  // long 자료형 사용
         //...
     }
+}
+```
+
+#### Integer.toString() with radix 
+
+> Integer.toString(int n, int radix)
+
+n진수 게임 문제를 풀이하다가
+`Integer.toString()`에 `radix`에 따른 숫자를 `String`으로 변환해준다는 것을 알게되었다.
+이것을 활용하면 코드를 훨씬 줄일 수 있겠다.
+
+```java
+class Solution {
+    public int solution(int n, int k) {
+        return (int) Arrays.stream(Integer.toString(n, k).split("0"))
+                .filter(s -> !s.isEmpty())
+                .mapToLong(Long::parseLong)
+                .filter(this::isPrime)
+                .count();
+    }
+    // ...
 }
 ```
 

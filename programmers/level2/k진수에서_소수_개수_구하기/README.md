@@ -10,7 +10,7 @@
     * [시간복잡도](#시간복잡도)
     * [리펙토링](#리펙토링)
         + [제한조건에 따른 자료형 범위 예측](#제한조건에-따른-자료형-범위-예측)
-        + [Integer.toString() with radix](#Integer.toString()-with-radix)
+        + [Integer.toString() with radix](#integertostring-with-radix)
 - [참고자료](#참고자료)
 
 ## 문제분석

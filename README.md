@@ -6,7 +6,7 @@
   * [불필요한 객체 생성](/programmers/level2/할인행사/README.md#불필요한-객체-생성)  
   * [Collection 객체와 static final](/programmers/level2/할인행사/README.md#Collection-객체와-static-final)
   * [Integer.String() with Radix](/programmers/level2/n진수_게임/README.md#리펙토링)
-  * [Integer.String() with Radix](/programmers/level2/k진수에서_소수_개수_구하기/README.md#Integer.toString()-with-radix)
+  * [Integer.String() with Radix](/programmers/level2/k진수에서_소수_개수_구하기/README.md#integertostring-with-radix)
 
 
 * 오답노트

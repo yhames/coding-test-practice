@@ -3,3 +3,8 @@
 .DS_Store
 .idea
 out
+
+### C++
+CMakeLists.txt
+cmake-build-debug/
+

@@ -2,27 +2,9 @@
 #include <queue>
 #include <vector>
 #include <algorithm>
+#include <utility>
 
 using namespace std;
-
-class Student {
-private:
-    int id;
-    int desired;
-public:
-    Student(int _id, int _desired) {
-        id = _id;
-        desired = _desired;
-    }
-
-    int get_id() const {
-        return (id);
-    }
-
-    int get_desired() const {
-        return (desired);
-    }
-};
 
 void print_answer(vector<int> list) {
     size_t len, i;
@@ -44,7 +26,7 @@ void print_answer(vector<int> list) {
 int main() {
     int n, type, i;
     int id, desired, supplied;
-    queue<Student> stand;
+    queue<pair<int, int>> stand;    // pair 사용
     vector<int> list_a, list_b, list_c;
 
     cin >> n;
@@ -52,19 +34,18 @@ int main() {
         cin >> type;
         if (type == 1) {        // 유형 1
             cin >> id >> desired;
-//            stand.push(Student(id, desired));
-            stand.emplace(id, desired); // c++11 added
+            stand.emplace(id, desired); // emplace 사용
         } else if (type == 2) { // 유형2
             cin >> supplied;
-            if (stand.front().get_desired() == supplied)
-                list_a.push_back(stand.front().get_id());
-            else if (stand.front().get_desired() != supplied)
-                list_b.push_back(stand.front().get_id());
+            if (stand.front().second == supplied)
+                list_a.push_back(stand.front().first);
+            else if (stand.front().second != supplied)
+                list_b.push_back(stand.front().first);
             stand.pop();
         }
     }
     while (!stand.empty()) {
-        list_c.push_back(stand.front().get_id());
+        list_c.push_back(stand.front().first);
         stand.pop();
     }
     print_answer(list_a);

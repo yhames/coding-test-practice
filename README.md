@@ -20,3 +20,9 @@
 
 
 ## 백준 : C++
+
+* 발표자료
+  * [백준 26043 - 식당 메뉴](/baekjoon/26043/README.md)
+
+* 오답노트
+  * [백준 5525 - IOIOI](/baekjoon/5525/README.md)

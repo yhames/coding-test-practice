@@ -1,4 +1,4 @@
-# [백준 26043 - 식당 메뉴](https://www.acmicpc.net/problem/26043)
+# [백준 5525 - IOIOI](https://www.acmicpc.net/problem/26043)
 
 - [문제분석](#문제분석)
     * [요구사항](#요구사항)

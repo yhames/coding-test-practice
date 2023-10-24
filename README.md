@@ -21,6 +21,9 @@
 
 ## 백준 : C++
 
+* 공부한 내용 정리
+  * [iterator 순회 시 container 요소 추가/삭제](/baekjoon/1406/README.md#iterator-순회-중-리스트-추가삭제)
+
 * 발표자료
   * [백준 26043 - 식당 메뉴](/baekjoon/26043/README.md)
   * [연결리스트 - Linked List](/baekjoon/data_structure/linked_list/README.md)

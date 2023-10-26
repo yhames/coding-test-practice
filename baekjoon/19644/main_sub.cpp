@@ -3,10 +3,12 @@
 
 using namespace std;
 
+using pair<int, int> zombie;
+
 int main() {
 	int l, ml, mk, c, z, i;
-	list<pair<int,int>>::iterator iter;
-	list<pair<int, int>> zombies;    // hp, damaged
+	list<zombie>::iterator iter;
+	list<zombie> zombies;    // hp, damaged
 
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);

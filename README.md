@@ -24,6 +24,7 @@
 * 공부한 내용 정리
   * [iterator 순회 시 container 요소 추가/삭제](/baekjoon/1406/README.md#iterator-순회-중-리스트-추가삭제)
   * [for_each()](/baekjoon/1406/README.md#foreach)
+  * [누적 합과 슬라이딩 윈도우](/baekjoon/19644/README.md#누적-합과-슬라이딩-윈도우)
 
 * 발표자료
   * [백준 26043 - 식당 메뉴](/baekjoon/26043/README.md)

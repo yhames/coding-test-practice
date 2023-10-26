@@ -3,7 +3,7 @@
 
 using namespace std;
 
-using pair<int, int> zombie;
+using pair<int, int> = zombie;
 
 int main() {
 	int l, ml, mk, c, z, i;

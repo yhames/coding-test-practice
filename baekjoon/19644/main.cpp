@@ -14,16 +14,14 @@ int main() {
 	cin >> l >> ml >> mk >> c;
 	for (int i = 0; i < ml && i < l; i++) {
 		cin >> zombie;
-		if (zombie > damaged.back() + mk) {
-			if (c > 0) {
-				c--;
-				damaged.push_back(damaged.back());
-			} else {
-				cout << "NO" << '\n';
-				return (0);
-			}
-		} else {
+		if (zombie <= damaged.back() + mk) {
 			damaged.push_back(damaged.back() + mk);
+		} else if (c > 0) {
+			c--;
+			damaged.push_back(damaged.back());
+		} else {
+			cout << "NO" << '\n';
+			return (0);
 		}
 	}
 

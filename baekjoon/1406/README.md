@@ -107,7 +107,7 @@ int main() {
 
 #### 동작방식
 
-[PDF 참고](/list_동작방식.pdf)
+[PDF 참고](/baekjoon/1406//list_동작방식.pdf)
 
 ### 리펙토링
 

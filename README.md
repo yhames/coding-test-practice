@@ -27,6 +27,7 @@
   * [누적 합과 구간 합](/baekjoon/19644/README.md#누적-합과-구간-합)
 
 * 발표자료
-  * [백준 26043 - 식당 메뉴](/baekjoon/26043/README.md)
   * [연결리스트 - Linked List](/baekjoon/data_structure/linked_list/README.md)
+  * [백준 26043 - 식당 메뉴](/baekjoon/26043/README.md)
   * [백준 5525 - IOIOI](/baekjoon/5525/README.md)
+  * [백준 19644 - 좀비 떼가 기관총 진지에도 오다니](/baekjoon/19644/README.md)

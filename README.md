@@ -27,6 +27,7 @@
   * [누적 합과 구간 합](/baekjoon/19644/README.md#누적-합과-구간-합)
   * [플로이드-와샬 알고리즘](/baekjoon/11403/README.md#플로이드-와샬-알고리즘)
   * [BFS - 메모리 초과 (방문 체크)](/baekjoon/2178/README.md#메모리-초과)
+  * [BFS 경로 탐색 알고리즘](/baekjoon/2206/README.md#bfs)
 
 * 발표자료
   * [연결리스트 - Linked List](/baekjoon/data_structure/linked_list/README.md)

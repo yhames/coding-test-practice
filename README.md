@@ -34,3 +34,4 @@
   * [백준 26043 - 식당 메뉴](/baekjoon/26043/README.md)
   * [백준 5525 - IOIOI](/baekjoon/5525/README.md)
   * [백준 19644 - 좀비 떼가 기관총 진지에도 오다니](/baekjoon/19644/README.md)
+  * [백준 10026 - 적록색약](/baekjoon/10026/README.md)

@@ -30,6 +30,7 @@
   * [BFS - 메모리 초과 (이분 탐색)](/baekjoon/1939/README.md#bfs--이분탐색)
   * [BFS 경로 탐색 알고리즘](/baekjoon/2206/README.md#bfs)
   * [이진탐색 - vector, set](/baekjoon/1920/README.md)
+  * [트리순회 - 전위, 중위, 후위](/baekjoon/2263/README.md)
 
 * 발표자료
   * [연결리스트 - Linked List](/baekjoon/data_structure/linked_list/README.md)

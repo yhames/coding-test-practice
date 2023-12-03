@@ -5,8 +5,10 @@ constexpr int MAX_SIZE = 1 << 6;
 int n;
 char map[MAX_SIZE][MAX_SIZE];
 std::string answer;
+int memcount = 0;
 
 void divide(int x, int y, int size) {
+    memcount++;
     int checksum = 0;
     for (int i = x; i < x + size; ++i) {
         for (int j = y; j < y + size; ++j) {
@@ -36,5 +38,6 @@ int main() {
     }
     divide(0, 0, n);
     std::cout << answer << '\n';
+    std::cout << memcount << '\n';
     return 0;
 }

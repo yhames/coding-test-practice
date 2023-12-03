@@ -40,3 +40,4 @@
   * [백준 19644 - 좀비 떼가 기관총 진지에도 오다니](/baekjoon/19644/README.md)
   * [백준 10026 - 적록색약](/baekjoon/10026/README.md)
   * [백준 6236 - 용돈관리](/baekjoon/6236/README.md)
+  * [백준 1992 - 쿼드트리](/baekjoon/1992/README.md)

@@ -43,3 +43,4 @@
   * [백준 6236 - 용돈관리](/baekjoon/6236/README.md)
   * [백준 1992 - 쿼드트리](/baekjoon/1992/README.md)
   * [백준 2615 - 오목](/baekjoon/2615/README.md)
+  * [백준 1080 - 행렬](/baekjoon/1080/README.md)
